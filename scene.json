@@ -1,0 +1,135 @@
+{
+	"camera" : 
+	{
+		"center" : "-62.696 -94.792 0.000",
+		"eye" : "-62.696 -94.792 1.000",
+		"up" : "0.000 1.000 0.000"
+	},
+	"general" : 
+	{
+		"ambientcolor" : "0.300 0.300 0.300",
+		"bloom" : false,
+		"bloomstrength" : 2.0,
+		"bloomthreshold" : 0.64999997615814209,
+		"camerafade" : true,
+		"cameraparallax" : false,
+		"cameraparallaxamount" : 0.5,
+		"cameraparallaxdelay" : 0.10000000149011612,
+		"cameraparallaxmouseinfluence" : 0.0,
+		"camerapreview" : true,
+		"camerashake" : false,
+		"camerashakeamplitude" : 0.5,
+		"camerashakeroughness" : 1.0,
+		"camerashakespeed" : 3.0,
+		"clearcolor" : "0.700 0.700 0.700",
+		"clearenabled" : true,
+		"farz" : 10000.0,
+		"fov" : 50.0,
+		"nearz" : 0.0099999997764825821,
+		"orthogonalprojection" : 
+		{
+			"height" : 1440,
+			"width" : 1920
+		},
+		"skylightcolor" : "0.300 0.300 0.300"
+	},
+	"objects" : 
+	[
+		{
+			"angles" : "0.000 0.000 0.000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"dependencies" : [ 13 ],
+			"effects" : 
+			[
+				{
+					"file" : "effects/godrays/effect.json",
+					"id" : 126,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"noisesmoothness" : 0.31
+							},
+							"id" : 127,
+							"textures" : [ null, "util/white", "util/clouds_256" ]
+						},
+						{
+							"constantshadervalues" : 
+							{
+								"rayintensity" : 0.45000000000000001,
+								"raylength" : 0.34999999999999998
+							},
+							"id" : 128
+						},
+						{
+							"id" : 129
+						},
+						{
+							"combos" : 
+							{
+								"VERTICAL" : 1
+							},
+							"id" : 130
+						},
+						{
+							"id" : 131,
+							"textures" : [ null, "_rt_imageLayerComposite_13_b" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/waterflow/effect.json",
+					"id" : 225,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"speed" : 0.17000000000000001,
+								"strength" : 0.34000000000000002
+							},
+							"id" : 226,
+							"textures" : 
+							[
+								null,
+								"masks/waterflow_mask_ccb7663c275188a1a67da106f758a6715df58bcd",
+								"effects/waterflowphase"
+							]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 13,
+			"image" : "models/Ryll Wallpaper.json",
+			"locktransforms" : true,
+			"name" : "Ryll Wallpaper",
+			"origin" : "960.000 720.000 0.000",
+			"parallaxDepth" : "1.000 1.000",
+			"perspective" : false,
+			"scale" : "1.000 1.000 1.000",
+			"size" : "1920.000 1440.000",
+			"solid" : true,
+			"visible" : true
+		},
+		{
+			"angles" : "0.000 0.000 0.000",
+			"id" : 213,
+			"image" : null,
+			"instanceoverride" : null,
+			"locktransforms" : false,
+			"model" : null,
+			"name" : "Ember",
+			"origin" : "693.308 -23.568 0.000",
+			"parallaxDepth" : "1.000 1.000",
+			"particle" : "particles/presets/ember.json",
+			"scale" : "2.471 2.471 2.471",
+			"visible" : true
+		}
+	]
+}
